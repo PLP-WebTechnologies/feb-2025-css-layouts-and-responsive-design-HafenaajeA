@@ -1,0 +1,204 @@
+/* General Styles */
+html, body {
+    height: 100%;
+    overflow-y: auto;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky; /* Make the header sticky */
+    top: 0; /* Stick to the top of the viewport */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem; /* Reduced padding to move logo and nav closer */
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+section {
+    padding: 2em;
+    text-align: center;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+}
+
+#about, #services, #contact {
+    background-color: #f4f4f4;
+    margin-top: 1em;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    gap: 2rem;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.about-content {
+    flex: 1;
+    padding: 1rem;
+    text-align: left;
+}
+
+#services {
+    text-align: center;
+    padding: 2em;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.service-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.service-card h3 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.service-card p {
+    color: #555;
+    line-height: 1.5;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+}
+
+/* Hero image styles */
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('man-singing.jpg'); /* Replace with the actual path to the image of a man singing */
+    background-size: cover;
+    background-position: center;
+    color: black; /* Changed text color to black for better visibility */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* Added text shadow for contrast */
+    height: 100vh;
+}
+
+#home h1, #home p {
+    margin: 0.5em;
+}
+
+#contact {
+    text-align: center;
+    padding: 2em;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Rounded corners */
+    font-size: 1rem;
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #333;
+}
+
+.contact-form button {
+    padding: 0.75rem 1.5rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
