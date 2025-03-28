@@ -10,6 +10,11 @@
     <header>
         <div class="header-content">
             <div class="logo">Almando</div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -24,20 +29,21 @@
         <section id="home">
             <h1>Welcome to Responsive Design</h1>
             <p>This is a demonstration of Flexbox and Grid layouts.</p>
-            <img src="https://via.placeholder.com/1200x400" alt="Hero Section Image"> <!-- Placeholder image -->
         </section>
         <section id="about">
             <div class="about-container">
                 <div class="about-image">
-                    <img src="https://via.placeholder.com/600x400" alt="About Us Image"> <!-- Placeholder image -->
+                    <img src="images/about-me.jpg" alt="About Us Image"> <!-- Corrected file path -->
                 </div>
                 <div class="about-content">
                     <h2>About Us</h2>
-                    <p>Learn more about our mission and values.</p>
-                    <p>We are dedicated to providing top-notch web design solutions that are both functional and visually appealing.</p>
-                    <p>Our team consists of experienced professionals who are passionate about creating user-friendly and responsive designs.</p>
-                    <p>We believe in continuous learning and innovation to stay ahead in the ever-evolving field of web development.</p>
-                    <p>Customer satisfaction is our top priority, and we strive to exceed expectations in every project we undertake.</p>
+                    <ul>
+                        <li>Learn more about our mission and values.</li>
+                        <li>We are dedicated to providing top-notch web design solutions that are both functional and visually appealing.</li>
+                        <li>Our team consists of experienced professionals who are passionate about creating user-friendly and responsive designs.</li>
+                        <li>We believe in continuous learning and innovation to stay ahead in the ever-evolving field of web development.</li>
+                        <li>Customer satisfaction is our top priority, and we strive to exceed expectations in every project we undertake.</li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -72,5 +78,6 @@
     <footer>
         <p>&copy; 2025 Responsive Design. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
